@@ -25,8 +25,8 @@ src/
 
 Each app implements the `AppModule` trait and lives in `src/apps/`:
 
-| App | Description | Status |
-|-----|-------------|--------|
+| App        | Description                               | Status         |
+| ---------- | ----------------------------------------- | -------------- |
 | Collection | Manage collections of items and resources | 🚧 In Progress |
 
 ## Tech Stack
@@ -58,16 +58,19 @@ SP_ID=your-supabase-project-id
 SP_URL=https://your-project.supabase.co
 SP_ANON=your-anon-key
 SP_SERVICE_ROLE=your-service-role-key
+SECURE_HTTP=true or false
 ```
 
 ## API Endpoints
 
 ### Auth
+
 - `POST /auth/login` — Login with email/password
 - `POST /auth/register` — Register new user
 - `POST /auth/logout` — Logout current session
 
 ### User
+
 - `GET /user/me` — Get current user info
 
 ## Adding a New App
